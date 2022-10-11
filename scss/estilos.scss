@@ -1,7 +1,13 @@
-$font1: antiquewhite;
-
+@import "variabless";
+@import "header";
 
 a{
     color: $font1;
+}
+
+nav{
+    a{
+        color: antiquewhite;
+}
 }
 
