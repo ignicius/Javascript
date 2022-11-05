@@ -1,7 +1,204 @@
-a {
-  color: antiquewhite;
+* {
+  margin: 0px;
 }
 
-nav a {
-  color: antiquewhite;
+body {
+  background-color: black;
+}
+
+input:not(.radio) {
+  display: block;
+}
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.flex-row {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  margin-top: 10px;
+}
+
+/* -------- ESTILO STICKY HEADER -------- */
+
+.stickyHeader {
+  background-color: gray;
+}
+
+.itemsNav {
+  text-transform: uppercase;
+}
+
+.header__links {
+  font-family: 'Montserrat', sans-serif;
+  text-shadow: 1px 2px 2px rgb(0 0 0 / 20%);
+}
+
+.header__title {
+  text-shadow: 1px 2px 2px rgb(0 0 0 / 20%);
+}
+
+/* -------- ESTILO SECCION PRINCIPAL INDEX -------- */
+
+.imagenPrincipal {
+  width: 100%;
+}
+
+.h1Principal {
+  font-family: 'Montserrat', sans-serif;
+  margin: 30px;
+  color: white;
+  text-shadow: 1px 2px 2px rgb(0 0 0 / 79%);
+  position: absolute;
+  top: 16vw;
+  left: 29vw;
+  z-index: 2;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: center;
+  margin: 30px;
+  color: white;
+  z-index: 1;
+} 
+
+/* -------- ESTILO DE AREA DE BUSQUEDA -------- */
+
+
+.btnFiltrar {
+  position: absolute;
+  bottom: 15vw;
+  left: 32vw;
+  width: 100px;
+  background-color: gray;
+  color: white;
+  text-transform: uppercase;
+}
+
+.busqueda {
+  position: absolute;
+  bottom: 15vw;
+  left: 40vw;
+  width: 420px;
+}
+
+/* -------- ESTILO SECCION PRODUCTOS -------- */
+
+.seccionProductos {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: center;
+  background-color: whitesmoke;
+  width: auto;
+  min-height: 400px;
+  /* margin: 50px 100px 50px 100px; */
+}
+
+.card {
+  margin: 5px;
+  transition: transform 300ms ease-out;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+
+/* -------- ESTILO FORMULARIO DE CONTACTO -------- */
+
+
+.seccionFormularioDeContacto {
+  height: 400px;
+  background-color: white;
+}
+
+.formularioDeContacto input {
+  width: 300px;
+  margin: 4px;
+}
+
+.mensajeDeUsuario {
+  width: 100%;
+  height: 200px;
+}
+
+
+/* -------- ESTILO DE AGREGAR PRODUCTOS -------- */
+
+.crm {
+  display: none;
+}
+
+
+
+
+/* -------- ESTILO PAGINA PRODUCTOS -------- */
+
+
+.h1Productos {
+  padding: 25px;
+  color: whitesmoke;
+}
+
+/* -------- ESTILO FILTRO -------- */
+
+
+.filtro {
+  height: 500px;
+  width: 300px;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: grey;
+  border-radius: 5px;
+  color: white;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.camposFiltro {
+  padding: 20px;
+  color: white;
+  text-transform: capitalize;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.desdeYhasta {
+  display: flex;
+}
+
+.desde {
+  width: 120px ;
+  margin: 2px;
+}
+
+.hasta {
+  width: 120px;
+  margin: 2px;
+}
+
+.filtroPropiedades {
+  min-height: 600px;
 }

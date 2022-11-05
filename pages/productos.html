@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keyword" content="">
+	<meta name="description" content="Tecno Ally">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Benne&family=Montserrat:wght@100;200;500;700&display=swap"
+		rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="../css/estilos.css">
+	<title>Tecno Ally</title>
+</head>
+
+<body>
+	<!-- inicio header--------->
+	<header class="stickyHeader">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<a class="navbar-brand header__title" href="../index.html">Tecno Ally</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav justify-content-end itemsNav">
+					<li class="nav-item">
+						<a class="nav-link header__links" href="../index.html">Inicio<span
+								class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link header__links" href="../pages/productos.html">Productos</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<h1 class="flex h1Productos">Tecno Ally</h1>
+
+	<div class="flex-row filtroProductos">
+		<div class="filtro flex" id="filtro">
+			<p>Precio</p>
+			<form class="camposFiltro">
+				<div>
+					<input type="radio" class="radio" id="dolares" name="moneda" value="dolares" checked>
+					<label for="dolares">Dolares</label>
+				</div>
+				<div class="desdeYhasta">
+					<input type="number" id="desde" placeholder="Desde" class="desde">
+					<input type="number" id="hasta" placeholder="Hasta" class="hasta">
+				</div>
+				<p>Modelo</p>
+				<select name="cantidadModelo" id="cantidadModelo">
+					<option value="" selected>Seleccionar</option>
+					<option value="1">Iphone 11</option>
+					<option value="2">Iphone 12</option>
+					<option value="3">Iphone 13</option>
+					<option value="4">Iphone 13 Pro</option>
+					<option value="5">Iphone 13 Pro Max</option>
+					<option value="6">Iphone 14</option>
+					<option value="7">Iphone 14 Pro</option>
+                    <option value="8">Iphone 14 Pro Max</option>
+				</select>
+
+				<p class="label">Seleccione Color</p>
+				<select name="" id="listadoDeColores"></select>
+
+				<input type="submit" value="Aplicar" id="aplicarFiltros">
+			</form>
+		</div>
+
+		<div id="contenedorProductos" class="seccionProductos"></div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="../js/productos.js"></script>
+</body>
+
+</html>

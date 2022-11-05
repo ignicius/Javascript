@@ -1,115 +1,158 @@
-// let UserName = prompt(`¿Cual es tu nombre?`)
-// console.log(UserName)
-
-// let UserAge = prompt(`¿Cual es tu edad?`)
-// console.log(UserAge+" años")
-
-// let UserNationanilty = prompt(`¿Cual es tu nacionalidad?`)
-// console.log(UserNationanilty)
+$("#btnFiltrar").on("click", refrescarPagina);
+$("#btnFiltrar").on("click", scrolear);
+$("#btnFiltrar").on("click", animacionesOnClick);
 
 
 
-// DEFINIENDO CONSTANTE IVA e INTERESES //
+let todosLosProductos = null;
+let productosFiltrados = null;
+const contenedorProductos = document.getElementById('contenedorProductos');
 
-const IVA = 21/100
-const intereses = 15/100
-
-// UTILIZAR UN FILTRO CON OPCIONES PARA
-// 1- Rango de precios
-// 2- Condiciones (Usado/Nuevo/% de Bateria)
-// 3- Definir parametros (Producto/Modelo/Memoria/Color/Precio/Codigo/)
-// 4- 
-// 5- 
-// 6- 
-// 7- 
-// 8- 
-
-
-// Mostrar Menu desplegable con los modelos y al elegir uno, autoscroll hacia la imagen con detalles del producto + precio y opciones de pago
-
-
-
-// let precioFinal = +prompt(`¿Cuanto estas dispuesto a pagar?`)
-
-if(precioFinal >= 1000){
-    console.log(`Venta mayor a 1000`);
-} else if(precioFinal < 500){
-    console.log(`Venta menor a 500`);
-} else if(500 >= precioFinal < 1000){
-    console.log(`Venta entre 500 y 1000`);
-} else{
-    console.log(`No introdujo numero entero`);
-}
-
-// let cuotas = +prompt(`En cuantas cuotas te gustaria pagarlo?`)
-
-//      
-console.log(cuotas);
-
-
-const precioSinIva = precioFinal - (precioFinal * IVA);
-console.log(precioSinIva);
-
-let precioFinalCuotas = [precioFinal + (precioFinal * intereses * cuotas)];
-
-console.log(precioFinalCuotas);
-
-function calcularDescuento(precio, porcentaje) {
-    let Descuento = precio * porcentaje /100;
-    let precioFinalDescuento = precio - valorDescuento;
-
-    return precioFinalDescuento;
-
-}
-
-class Producto {
-    constructor(nombre, memoria, precio) {
-        this.nombre = nombre;
-        this.memoria = memoria;
-        this.precio = precio;
-    }
-}
-
-const i1264 = new Producto("Iphone 12","64gb",700);
-console.log(i1264);
-
-const i12128 = new Producto("Iphone 12","128gb",800);
-console.log(i12128);
-
-// ES BUENA PRACTICA SEGUIR CREANDO OBJETOS DE CADA PRODUCTO? O AL ESTAR EN EL ARRAY LOS PUEDO EXTRAER CON MAYOR SIMPLEZA?
-
-const listaProductos = [
-    {nombre:`Iphone 12`, memoria: `64gb`, precio: 700},
-    {nombre:`Iphone 12`, memoria: `128gb`, precio: 800},
-    {nombre:`Iphone 12 Pro`, memoria: `64gb`, precio: 800},
-    {nombre:`Iphone 12 Pro`, memoria: `128gb`, precio: 800},
-    {nombre:`Iphone 13`, memoria: `128gb`, precio: 800},
-    {nombre:`Iphone 13`, memoria: `256gb`, precio: 800},
-    {nombre:`Iphone 13`, memoria: `512gb`, precio: 800},
-    {nombre:`Iphone 13 Pro`, memoria: `128gb`, precio: 800},
-    {nombre:`Iphone 13 Pro`, memoria: `256gb`, precio: 800},
-    {nombre:`Iphone 13 Pro`, memoria: `512gb`, precio: 800},
-    {nombre:`Iphone 13 Pro Max`, memoria: `128gb`, precio: 800},
-    {nombre:`Iphone 13 Pro Max`, memoria: `256gb`, precio: 800},
-    {nombre:`Iphone 13 Pro Max`, memoria: `512gb`, precio: 800},
-    {nombre:`Iphone 14`, memoria: `128gb`, precio: 800},
-    {nombre:`Iphone 14`, memoria: `256gb`, precio: 800},
-    {nombre:`Iphone 14`, memoria: `512gb`, precio: 800},
-    {nombre:`Iphone 14 Pro`, memoria: `128gb`, precio: 800},
-    {nombre:`Iphone 14 Pro`, memoria: `256gb`, precio: 800},
-    {nombre:`Iphone 14 Pro`, memoria: `512gb`, precio: 800},
-    {nombre:`Iphone 14 Pro Max`, memoria: `128gb`, precio: 800},
-    {nombre:`Iphone 14 Pro Max`, memoria: `256gb`, precio: 800},
-    {nombre:`Iphone 14 Pro Max`, memoria: `512gb`, precio: 800},
-]
-console.log(listaProductos);
-
-listaProductos.forEach((Producto) => {
-    console.log(`Este producto es ${Producto.nombre} ${Producto.memoria} y su precio es ${Producto.precio}`)
+$.ajax({
+  url: "data/data.json",
+  dataType: 'json',
+  async: true,
+  success: function (data) {
+    todosLosProductos = data;
+    console.log(todosLosProductos);
+    refrescarPagina();
+    animaciones();
+  }
 });
 
-const crearProducto = {}
+
+function mostrarProductos() {
+  $(".seccionProductos").empty();
+  for (const info of productosFiltrados)
+    $(".seccionProductos").append(
+      `<a href="#" target="_blank">
+          <div class="card" style="width: 18rem;">
+            <img src="./images/iph14pro.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">${info.producto}</h5>
+            <p class="card-text">${info.memoria}</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Barrio: ${info.barrio}</li>
+            <li class="list-group-item">Precio: ${info.precio}</li>
+          </ul>
+        </div>
+      </a>`);
+}
 
 
 
+// function mostrarProductos() {
+//   $(".seccionProductos").empty();
+//   for (const info of productosFiltrados)
+//     $(".seccionProductos").append(
+//       `<a href="#" target="_blank">
+//           <div class="card" style="width: 18rem;">
+//             <img src="../images/iph_13.jpg" class="card-img-top" alt="...">
+//           <div class="card-body">
+//             <h5 class="card-title">${info.producto}</h5>
+//             <p class="card-text">${info.memoria}</p>
+//             <p class="card-text">${info.descripcion}</p>
+//           </div>
+//           <ul class="list-group list-group-flush">
+//             <li class="list-group-item">Color: ${info.color}</li>
+//             <li class="list-group-item">Precio: ${info.precio}</li>
+//           </ul>
+//         </div>
+//       </a>`);
+// }
 
+
+
+// function filtrarDatos() {
+//   productosFiltrados = todosLosProductos
+//     .filter(todosLosProductos =>
+//       todosLosProductos.precio.toLowerCase().includes($("#busqueda").value().toLowerCase())
+//       || todosLosProductos.id.includes($("#busqueda").value())
+//     );
+// }
+
+
+
+function refrescarPagina() {
+  // filtrarDatos();
+  mostrarProductos();
+}
+
+
+
+// ANIMACIONES
+
+
+function animaciones() {
+  $("h1").hide();
+  $(".card").hide();
+  $("h1").fadeIn();
+  $(".card").fadeIn("slow", function () {
+  });
+}
+
+function animacionesOnClick() {
+  $(".card").hide();
+  $(".card").fadeIn(3000, function () {
+  });
+}
+
+
+// FIN ANIMACIONES
+
+
+function scrolear() {
+  $('html,body').animate({
+      scrollTop: $(".productosDestacados").offset().top},
+      'slow');
+};
+
+
+  // FORMULARIO
+
+  let boton = document.getElementById("btn");
+
+  boton.addEventListener("click", (e)=> {
+    let nombre = document.getElementById("nombre").value;
+    let telefono = document.getElementById("telefono").value;
+    let email = document.getElementById("email").value;
+    let mensaje = document.getElementById("mensajeDeUsuario").value;
+
+    e.preventDefault();
+    localStorage.setItem("nombre", nombre);
+    localStorage.setItem("telefono", telefono);
+    localStorage.setItem("email", email);
+    localStorage.setItem("mensaje", mensaje);
+  })
+
+
+// Toastify({
+//   text: "This is a toast",
+//   duration: 3000,
+//   destination: "https://github.com/apvarun/toastify-js",
+//   newWindow: true,
+//   close: true,
+//   gravity: "top", // `top` or `bottom`
+//   position: "left", // `left`, `center` or `right`
+//   stopOnFocus: true, // Prevents dismissing of toast on hover
+//   style: {
+//     background: "linear-gradient(to right, #00b09b, #96c93d)",
+//   },
+//   onClick: function(){} // Callback after click
+// }).showToast();
+
+// boton.addEventListener("click", Toastify({
+//   text: "This is a toast",
+//   duration: 3000,
+//   destination: "https://github.com/apvarun/toastify-js",
+//   newWindow: true,
+//   close: true,
+//   gravity: "top", // `top` or `bottom`
+//   position: "left", // `left`, `center` or `right`
+//   stopOnFocus: true, // Prevents dismissing of toast on hover
+//   style: {
+//     background: "linear-gradient(to right, #00b09b, #96c93d)",
+//   },
+//   onClick: function(){} // Callback after click
+// }).showToast());

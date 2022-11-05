@@ -1,0 +1,50 @@
+[
+    {
+        "id": 0,
+        "modelo": "iPhone 11",
+        "memoria": "64gb",
+        "precio": 600,
+        "descripcion": "Disponible en Stock",
+        "color": "Midnight"
+    },
+    {
+        "id": 1,
+        "modelo": "iPhone 11",
+        "memoria": "128GB",
+        "precio": 680,
+        "descripcion": "Disponible en Stock",
+        "color": "Starlight"
+    },
+    {
+        "id": 2,
+        "modelo": "iPhone 12",
+        "memoria": "64gb",
+        "precio": 740,
+        "descripcion": "Disponible en Stock",
+        "color": "Green Alpine"
+    },
+    {
+        "id": 3,
+        "modelo": "iPhone 12",
+        "memoria": "128GB",
+        "precio": 830,
+        "descripcion": "Disponible en Stock",
+        "color": "Midnight"
+    },
+    {
+        "id": 4,
+        "modelo": "iPhone 13",
+        "memoria": "128GB",
+        "precio": 900,
+        "descripcion": "Disponible en Stock",
+        "color": "Starlight"
+    },
+    {
+        "id": 5,
+        "modelo": "iPhone 13",
+        "memoria": "256GB",
+        "precio": 1020,
+        "descripcion": "Disponible en Stock",
+        "color": "Blue Sierra"
+    }
+]
