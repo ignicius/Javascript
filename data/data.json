@@ -10,21 +10,53 @@
     {
         "id": 1,
         "modelo": "iPhone 11",
+        "memoria": "64gb",
+        "precio": 600,
+        "descripcion": "Disponible en Stock",
+        "color": "Starlight"
+    },
+    {
+        "id": 2,
+        "modelo": "iPhone 11",
         "memoria": "128GB",
         "precio": 680,
         "descripcion": "Disponible en Stock",
         "color": "Starlight"
     },
     {
-        "id": 2,
+        "id": 3,
+        "modelo": "iPhone 11",
+        "memoria": "128GB",
+        "precio": 680,
+        "descripcion": "Disponible en Stock",
+        "color": "Midnight"
+    },
+    {
+        "id": 4,
         "modelo": "iPhone 12",
         "memoria": "64gb",
         "precio": 740,
         "descripcion": "Disponible en Stock",
-        "color": "Green Alpine"
+        "color": "Starlight"
     },
     {
-        "id": 3,
+        "id": 5,
+        "modelo": "iPhone 12",
+        "memoria": "64gb",
+        "precio": 740,
+        "descripcion": "Disponible en Stock",
+        "color": "Midnight"
+    },
+    {
+        "id": 6,
+        "modelo": "iPhone 12",
+        "memoria": "128GB",
+        "precio": 830,
+        "descripcion": "Disponible en Stock",
+        "color": "Starlight"
+    },
+    {
+        "id": 7,
         "modelo": "iPhone 12",
         "memoria": "128GB",
         "precio": 830,
@@ -32,7 +64,23 @@
         "color": "Midnight"
     },
     {
-        "id": 4,
+        "id": 8,
+        "modelo": "iPhone 12",
+        "memoria": "128GB",
+        "precio": 830,
+        "descripcion": "Disponible en Stock",
+        "color": "Blue Sierra"
+    },
+    {
+        "id": 9,
+        "modelo": "iPhone 12",
+        "memoria": "128GB",
+        "precio": 830,
+        "descripcion": "Disponible en Stock",
+        "color": "Green Alpine"
+    },
+    {
+        "id": 10,
         "modelo": "iPhone 13",
         "memoria": "128GB",
         "precio": 900,
@@ -40,11 +88,316 @@
         "color": "Starlight"
     },
     {
-        "id": 5,
+        "id": 11,
+        "modelo": "iPhone 13",
+        "memoria": "128GB",
+        "precio": 900,
+        "descripcion": "Disponible en Stock",
+        "color": "Midnight"
+    },
+    {
+        "id": 13,
+        "modelo": "iPhone 13",
+        "memoria": "128GB",
+        "precio": 900,
+        "descripcion": "Disponible en Stock",
+        "color": "Blue Sierra"
+    },
+    {
+        "id": 14,
+        "modelo": "iPhone 13",
+        "memoria": "128GB",
+        "precio": 900,
+        "descripcion": "Disponible en Stock",
+        "color": "Green Alpine"
+    },
+    {
+        "id": 15,
+        "modelo": "iPhone 13",
+        "memoria": "128GB",
+        "precio": 900,
+        "descripcion": "Disponible en Stock",
+        "color": "Pink"
+    },
+    {
+        "id": 16,
         "modelo": "iPhone 13",
         "memoria": "256GB",
         "precio": 1020,
         "descripcion": "Disponible en Stock",
+        "color": "Midnight"
+    },
+    {
+        "id": 17,
+        "modelo": "iPhone 13 Pro",
+        "memoria": "128GB",
+        "precio": 1150,
+        "descripcion": "Disponible en Stock",
+        "color": "Gold"
+    },
+    {
+        "id": 18,
+        "modelo": "iPhone 13 Pro",
+        "memoria": "128GB",
+        "precio": 1150,
+        "descripcion": "Disponible en Stock",
+        "color": "Silver"
+    },
+    {
+        "id": 19,
+        "modelo": "iPhone 13 Pro",
+        "memoria": "128GB",
+        "precio": 1150,
+        "descripcion": "Disponible en Stock",
         "color": "Blue Sierra"
+    },
+    {
+        "id": 20,
+        "modelo": "iPhone 13 Pro",
+        "memoria": "128GB",
+        "precio": 1150,
+        "descripcion": "Disponible en Stock",
+        "color": "Green Alpine"
+    },
+    {
+        "id": 21,
+        "modelo": "iPhone 13 Pro",
+        "memoria": "256GB",
+        "precio": 1250,
+        "descripcion": "Disponible en Stock",
+        "color": "Gold"
+    },
+    {
+        "id": 22,
+        "modelo": "iPhone 13 Pro",
+        "memoria": "256GB",
+        "precio": 1250,
+        "descripcion": "Disponible en Stock",
+        "color": "Silver"
+    },
+    {
+        "id": 23,
+        "modelo": "iPhone 13 Pro",
+        "memoria": "256GB",
+        "precio": 1250,
+        "descripcion": "Disponible en Stock",
+        "color": "Blue Sierra"
+    },
+    {
+        "id": 24,
+        "modelo": "iPhone 13 Pro",
+        "memoria": "256GB",
+        "precio": 1250,
+        "descripcion": "Disponible en Stock",
+        "color": "Green Alpine"
+    },
+    {
+        "id": 25,
+        "modelo": "iPhone 13 Pro",
+        "memoria": "256GB",
+        "precio": 1250,
+        "descripcion": "Disponible en Stock",
+        "color": "Green Alpine"
+    },
+    {
+        "id": 26,
+        "modelo": "iPhone 13 Pro Max",
+        "memoria": "128GB",
+        "precio": 1270,
+        "descripcion": "Disponible en Stock",
+        "color": "Gold"
+    },
+    {
+        "id": 27,
+        "modelo": "iPhone 13 Pro Max",
+        "memoria": "128GB",
+        "precio": 1270,
+        "descripcion": "Disponible en Stock",
+        "color": "Silver"
+    },
+    {
+        "id": 28,
+        "modelo": "iPhone 13 Pro Max",
+        "memoria": "128GB",
+        "precio": 1270,
+        "descripcion": "Disponible en Stock",
+        "color": "Blue Sierra"
+    },
+    {
+        "id": 29,
+        "modelo": "iPhone 13 Pro Max",
+        "memoria": "128GB",
+        "precio": 1270,
+        "descripcion": "Disponible en Stock",
+        "color": "Green Alpine"
+    },
+    {
+        "id": 30,
+        "modelo": "iPhone 13 Pro Max",
+        "memoria": "256GB",
+        "precio": 1370,
+        "descripcion": "Disponible en Stock",
+        "color": "Gold"
+    },
+    {
+        "id": 31,
+        "modelo": "iPhone 13 Pro Max",
+        "memoria": "256GB",
+        "precio": 1370,
+        "descripcion": "Disponible en Stock",
+        "color": "Silver"
+    },
+    {
+        "id": 32,
+        "modelo": "iPhone 13 Pro Max",
+        "memoria": "256GB",
+        "precio": 1370,
+        "descripcion": "Disponible en Stock",
+        "color": "Blue Sierra"
+    },
+    {
+        "id": 33,
+        "modelo": "iPhone 13 Pro Max",
+        "memoria": "256GB",
+        "precio": 1370,
+        "descripcion": "Disponible en Stock",
+        "color": "Green Alpine"
+    },
+    {
+        "id": 34,
+        "modelo": "iPhone 13 Pro Max",
+        "memoria": "256GB",
+        "precio": 1370,
+        "descripcion": "Disponible en Stock",
+        "color": "Green Alpine"
+    },
+    {
+        "id": 35,
+        "modelo": "iPhone 14",
+        "memoria": "128GB",
+        "precio": 1000,
+        "descripcion": "Disponible en Stock",
+        "color": "Starlight"
+    },
+    {
+        "id": 36,
+        "modelo": "iPhone 14",
+        "memoria": "128GB",
+        "precio": 1000,
+        "descripcion": "Disponible en Stock",
+        "color": "Midnight"
+    },
+    {
+        "id": 37,
+        "modelo": "iPhone 14",
+        "memoria": "128GB",
+        "precio": 1000,
+        "descripcion": "Disponible en Stock",
+        "color": "Blue Sierra"
+    },
+    {
+        "id": 38,
+        "modelo": "iPhone 14",
+        "memoria": "128GB",
+        "precio": 1000,
+        "descripcion": "Disponible en Stock",
+        "color": "Deep Purple"
+    },
+    {
+        "id": 35,
+        "modelo": "iPhone 14",
+        "memoria": "256GB",
+        "precio": 1100,
+        "descripcion": "Disponible en Stock",
+        "color": "Starlight"
+    },
+    {
+        "id": 36,
+        "modelo": "iPhone 14",
+        "memoria": "256GB",
+        "precio": 1100,
+        "descripcion": "Disponible en Stock",
+        "color": "Midnight"
+    },
+    {
+        "id": 37,
+        "modelo": "iPhone 14",
+        "memoria": "256GB",
+        "precio": 1100,
+        "descripcion": "Disponible en Stock",
+        "color": "Blue Sierra"
+    },
+    {
+        "id": 38,
+        "modelo": "iPhone 14",
+        "memoria": "256GB",
+        "precio": 1100,
+        "descripcion": "Disponible en Stock",
+        "color": "Deep Purple"
+    },
+    {
+        "id": 39,
+        "modelo": "iPhone 14 Pro",
+        "memoria": "128GB",
+        "precio": 1150,
+        "descripcion": "Disponible en Stock",
+        "color": "Gold"
+    },
+    {
+        "id": 40,
+        "modelo": "iPhone 14 Pro",
+        "memoria": "128GB",
+        "precio": 1150,
+        "descripcion": "Disponible en Stock",
+        "color": "Silver"
+    },
+    {
+        "id": 41,
+        "modelo": "iPhone 14 Pro",
+        "memoria": "128GB",
+        "precio": 1150,
+        "descripcion": "Disponible en Stock",
+        "color": "Deep Purple"
+    },
+    {
+        "id": 42,
+        "modelo": "iPhone 14 Pro",
+        "memoria": "128GB",
+        "precio": 1150,
+        "descripcion": "Disponible en Stock",
+        "color": "Space Black"
+    },
+    {
+        "id": 39,
+        "modelo": "iPhone 14 Pro",
+        "memoria": "256GB",
+        "precio": 1250,
+        "descripcion": "Disponible en Stock",
+        "color": "Gold"
+    },
+    {
+        "id": 40,
+        "modelo": "iPhone 14 Pro",
+        "memoria": "256GB",
+        "precio": 1250,
+        "descripcion": "Disponible en Stock",
+        "color": "Silver"
+    },
+    {
+        "id": 41,
+        "modelo": "iPhone 14 Pro",
+        "memoria": "256GB",
+        "precio": 1250,
+        "descripcion": "Disponible en Stock",
+        "color": "Deep Purple"
+    },
+    {
+        "id": 42,
+        "modelo": "iPhone 14 Pro",
+        "memoria": "256GB",
+        "precio": 1250,
+        "descripcion": "Disponible en Stock",
+        "color": "Space Black"
     }
+
 ]

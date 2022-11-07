@@ -8,7 +8,8 @@ $.ajax({
   async: true,
   success: function (data) {
     todosLosProductos = data;
-    productosFiltrados = todosLosProductos;
+    console.log(todosLosProductos);
+    productosFiltrados = todosLosProductos; 
     refrescarPagina();
     animaciones();
   }
@@ -18,12 +19,11 @@ $.ajax({
 
 function mostrarProductos() {
   $(".seccionProductos").empty();
-
   for (const info of productosFiltrados)
     $(".seccionProductos").append(
       `<a href="#" target="_blank">
 					<div class="card" style="width: 18rem;">
-						<img src="../images/iph14pro.jpg" class="card-img-top" alt="...">
+						<img src="../images/iph_12.jpeg" class="card-img-top" alt="...">
 						<div class="card-body">
 							<h5 class="card-title">${info.modelo}</h5>
               <p class="card-text">${info.memoria} memoria</p>
@@ -37,7 +37,7 @@ function mostrarProductos() {
 				</a>`
     );
 
-  animaciones();
+    animaciones();
 }
 
 
@@ -48,7 +48,9 @@ const colores = [
   "Green Alpine",
   "Silver",
   "Gold",
-  "Purple"
+  "Deep Purple",
+  "Pink",
+  "Space Black"
 ];
 
 const listadoDeColores = {};
@@ -74,10 +76,44 @@ function agregarColores() {
   }
 }
 
+const modelos = [
+  "iPhone 11",
+  "iPhone 12",
+  "iPhone 13",
+  "iPhone 13 Pro",
+  "iPhone 13 Pro Max",
+  "iPhone 14",
+  "iPhone 14 Pro",
+  "iPhone 14 Pro Max"
+];
+
+const listadoModelos = {};
+
+function agregarModelos() {
+
+  modelos.forEach(function (modelo) {
+
+    const celusFiltrados = todosLosProductos.filter(function (celu) {
+      return celu.modelo == modelo;
+    });
+
+    listadoModelos[modelo] = celusFiltrados.length;
+  });
+
+  $("#listadoModelos").append(`<option value="">Seleccionar</option>`);
+
+  // for...in: recorre todos las productos de un objeto
+  for (const modelo in listadoModelos) {
+    $("#listadoModelos").append(
+      `<option value="${modelo}">${modelo} (${listadoModelos[modelo]})</option>`
+    );
+  }
+}
 
 function refrescarPagina() {
   mostrarProductos();
   agregarColores();
+  agregarModelos();
 }
 
 
@@ -88,7 +124,7 @@ btn.addEventListener('click', aplicarFiltros);
 function aplicarFiltros(event) {
   event.preventDefault(); 
 
-  const modelo = document.getElementById('cantidadModelo').value;
+  const modelo = document.getElementById('listadoModelos').value;
   const moneda = document.querySelector('input[name="moneda"]:checked').value;
   const desde = document.getElementById('desde').value;
   const hasta = document.getElementById('hasta').value;

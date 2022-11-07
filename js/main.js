@@ -9,11 +9,12 @@ let productosFiltrados = null;
 const contenedorProductos = document.getElementById('contenedorProductos');
 
 $.ajax({
-  url: "data/data.json",
+  url: "data/data1.json",
   dataType: 'json',
   async: true,
   success: function (data) {
     todosLosProductos = data;
+    productosFiltrados = todosLosProductos; 
     console.log(todosLosProductos);
     refrescarPagina();
     animaciones();
@@ -29,11 +30,11 @@ function mostrarProductos() {
           <div class="card" style="width: 18rem;">
             <img src="./images/iph14pro.jpg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">${info.producto}</h5>
+            <h5 class="card-title">${info.modelo}</h5>
             <p class="card-text">${info.memoria}</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Barrio: ${info.barrio}</li>
+            <li class="list-group-item">Barrio: ${info.color}</li>
             <li class="list-group-item">Precio: ${info.precio}</li>
           </ul>
         </div>
@@ -41,41 +42,18 @@ function mostrarProductos() {
 }
 
 
-
-// function mostrarProductos() {
-//   $(".seccionProductos").empty();
-//   for (const info of productosFiltrados)
-//     $(".seccionProductos").append(
-//       `<a href="#" target="_blank">
-//           <div class="card" style="width: 18rem;">
-//             <img src="../images/iph_13.jpg" class="card-img-top" alt="...">
-//           <div class="card-body">
-//             <h5 class="card-title">${info.producto}</h5>
-//             <p class="card-text">${info.memoria}</p>
-//             <p class="card-text">${info.descripcion}</p>
-//           </div>
-//           <ul class="list-group list-group-flush">
-//             <li class="list-group-item">Color: ${info.color}</li>
-//             <li class="list-group-item">Precio: ${info.precio}</li>
-//           </ul>
-//         </div>
-//       </a>`);
-// }
-
-
-
-// function filtrarDatos() {
-//   productosFiltrados = todosLosProductos
-//     .filter(todosLosProductos =>
-//       todosLosProductos.precio.toLowerCase().includes($("#busqueda").value().toLowerCase())
-//       || todosLosProductos.id.includes($("#busqueda").value())
-//     );
-// }
+function filtrarDatos() {
+  productosFiltrados = todosLosProductos
+    .filter(todosLosProductos =>
+      todosLosProductos.precio.includes($("#busqueda").value())
+      || todosLosProductos.precio.includes($("#busqueda").value())
+    );
+}
 
 
 
 function refrescarPagina() {
-  // filtrarDatos();
+  filtrarDatos();
   mostrarProductos();
 }
 
@@ -126,33 +104,18 @@ function scrolear() {
     localStorage.setItem("mensaje", mensaje);
   })
 
-
-// Toastify({
-//   text: "This is a toast",
-//   duration: 3000,
-//   destination: "https://github.com/apvarun/toastify-js",
-//   newWindow: true,
-//   close: true,
-//   gravity: "top", // `top` or `bottom`
-//   position: "left", // `left`, `center` or `right`
-//   stopOnFocus: true, // Prevents dismissing of toast on hover
-//   style: {
-//     background: "linear-gradient(to right, #00b09b, #96c93d)",
-//   },
-//   onClick: function(){} // Callback after click
-// }).showToast();
-
-// boton.addEventListener("click", Toastify({
-//   text: "This is a toast",
-//   duration: 3000,
-//   destination: "https://github.com/apvarun/toastify-js",
-//   newWindow: true,
-//   close: true,
-//   gravity: "top", // `top` or `bottom`
-//   position: "left", // `left`, `center` or `right`
-//   stopOnFocus: true, // Prevents dismissing of toast on hover
-//   style: {
-//     background: "linear-gradient(to right, #00b09b, #96c93d)",
-//   },
-//   onClick: function(){} // Callback after click
-// }).showToast());
+boton.addEventListener("click", (e) =>
+  Toastify({
+  text: "Gracias por tu mensaje, te responderemos lo antes posible",
+  duration: 3000,
+  destination: "https://github.com/apvarun/toastify-js",
+  newWindow: true,
+  close: true,
+  gravity: "top", // `top` or `bottom`
+  position: "right", // `left`, `center` or `right`
+  stopOnFocus: true, // Prevents dismissing of toast on hover
+  style: {
+    background: "linear-gradient(to right, #00b09b, #96c93d)",
+  },
+  onClick: function(){} // Callback after click
+}).showToast());

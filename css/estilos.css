@@ -48,7 +48,7 @@ p {
 }
 
 .header__links {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-shadow: 1px 2px 2px rgb(0 0 0 / 20%);
 }
 
@@ -63,18 +63,18 @@ p {
 }
 
 .h1Principal {
-  font-family: 'Montserrat', sans-serif;
-  margin: 30px;
-  color: white;
+  font-family: 'Roboto', sans-serif;
+  margin: 65px;
+  color: rgb(8, 8, 8);
   text-shadow: 1px 2px 2px rgb(0 0 0 / 79%);
   position: absolute;
-  top: 16vw;
-  left: 29vw;
+  top: 17vw;
+  left: 32vw;
   z-index: 2;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
   display: flex;
   flex-flow: row nowrap;
   align-content: center;
@@ -111,7 +111,7 @@ h2 {
   flex-flow: row wrap;
   align-content: space-between;
   justify-content: center;
-  background-color: whitesmoke;
+  background-color: black;
   width: auto;
   min-height: 400px;
   /* margin: 50px 100px 50px 100px; */
@@ -120,11 +120,11 @@ h2 {
 .card {
   margin: 5px;
   transition: transform 300ms ease-out;
+
 }
 .card:hover {
   transform: scale(1.05);
 }
-
 
 /* -------- ESTILO FORMULARIO DE CONTACTO -------- */
 
@@ -174,14 +174,14 @@ h2 {
   border-radius: 5px;
   color: white;
   text-transform: capitalize;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .camposFiltro {
   padding: 20px;
   color: white;
   text-transform: capitalize;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 
 }
 
