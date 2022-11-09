@@ -9,7 +9,7 @@ let productosFiltrados = null;
 const contenedorProductos = document.getElementById('contenedorProductos');
 
 $.ajax({
-  url: "data/data1.json",
+  url: "data/data.json",
   dataType: 'json',
   async: true,
   success: function (data) {
@@ -28,25 +28,25 @@ function mostrarProductos() {
     $(".seccionProductos").append(
       `<a href="#" target="_blank">
           <div class="card" style="width: 18rem;">
-            <img src="./images/iph14pro.jpg" class="card-img-top" alt="...">
+            <img src=${info.src} class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">${info.modelo}</h5>
             <p class="card-text">${info.memoria}</p>
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Barrio: ${info.color}</li>
-            <li class="list-group-item">Precio: ${info.precio}</li>
+            <li class="list-group-item">Color: ${info.color}</li>
+            <li class="list-group-item">Precio: $ ${info.precio}</li>
           </ul>
         </div>
       </a>`);
 }
 
 
+
 function filtrarDatos() {
   productosFiltrados = todosLosProductos
-    .filter(todosLosProductos =>
-      todosLosProductos.precio.includes($("#busqueda").value())
-      || todosLosProductos.precio.includes($("#busqueda").value())
+    .filter(producto =>
+      producto.modelo.toLowerCase().includes($("#busqueda").val().toLowerCase())
     );
 }
 

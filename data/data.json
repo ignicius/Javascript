@@ -5,7 +5,8 @@
         "memoria": "64gb",
         "precio": 600,
         "descripcion": "Disponible en Stock",
-        "color": "Midnight"
+        "color": "Midnight",
+        "src": "./images/iph11black.jpg"
     },
     {
         "id": 1,
@@ -13,7 +14,8 @@
         "memoria": "64gb",
         "precio": 600,
         "descripcion": "Disponible en Stock",
-        "color": "Starlight"
+        "color": "Starlight",
+        "src": "./images/iph11white.jpg"
     },
     {
         "id": 2,
@@ -21,7 +23,8 @@
         "memoria": "128GB",
         "precio": 680,
         "descripcion": "Disponible en Stock",
-        "color": "Starlight"
+        "color": "Midnight",
+        "src": "./images/iph11black.jpg"
     },
     {
         "id": 3,
@@ -29,7 +32,8 @@
         "memoria": "128GB",
         "precio": 680,
         "descripcion": "Disponible en Stock",
-        "color": "Midnight"
+        "color": "Starlight",
+        "src": "./images/iph11white.jpg"
     },
     {
         "id": 4,
@@ -37,7 +41,8 @@
         "memoria": "64gb",
         "precio": 740,
         "descripcion": "Disponible en Stock",
-        "color": "Starlight"
+        "color": "Starlight",
+        "src": "./images/iph12white.jpg"
     },
     {
         "id": 5,
@@ -45,7 +50,8 @@
         "memoria": "64gb",
         "precio": 740,
         "descripcion": "Disponible en Stock",
-        "color": "Midnight"
+        "color": "Midnight",
+        "src": "./images/iph12black.jpg"
     },
     {
         "id": 6,
@@ -53,7 +59,8 @@
         "memoria": "128GB",
         "precio": 830,
         "descripcion": "Disponible en Stock",
-        "color": "Starlight"
+        "color": "Starlight",
+        "src": "./images/iph12white.jpg"
     },
     {
         "id": 7,
@@ -61,7 +68,8 @@
         "memoria": "128GB",
         "precio": 830,
         "descripcion": "Disponible en Stock",
-        "color": "Midnight"
+        "color": "Midnight",
+        "src": "./images/iph12black.jpg"
     },
     {
         "id": 8,
@@ -69,7 +77,8 @@
         "memoria": "128GB",
         "precio": 830,
         "descripcion": "Disponible en Stock",
-        "color": "Blue Sierra"
+        "color": "Blue Sierra",
+        "src": "./images/iph12blue.jpg"
     },
     {
         "id": 9,
@@ -77,7 +86,8 @@
         "memoria": "128GB",
         "precio": 830,
         "descripcion": "Disponible en Stock",
-        "color": "Green Alpine"
+        "color": "Green Alpine",
+        "src": "./images/iph12green.jpg"
     },
     {
         "id": 10,
@@ -85,7 +95,9 @@
         "memoria": "128GB",
         "precio": 900,
         "descripcion": "Disponible en Stock",
-        "color": "Starlight"
+        "color": "Starlight",
+        "src": "./images/iph13white.jpg"
+
     },
     {
         "id": 11,
@@ -93,7 +105,9 @@
         "memoria": "128GB",
         "precio": 900,
         "descripcion": "Disponible en Stock",
-        "color": "Midnight"
+        "color": "Midnight",
+        "src": "./images/iph13black.jpg"
+
     },
     {
         "id": 13,
@@ -101,7 +115,9 @@
         "memoria": "128GB",
         "precio": 900,
         "descripcion": "Disponible en Stock",
-        "color": "Blue Sierra"
+        "color": "Blue Sierra",
+        "src": "./images/iph13blue.jpg"
+
     },
     {
         "id": 14,
@@ -109,7 +125,9 @@
         "memoria": "128GB",
         "precio": 900,
         "descripcion": "Disponible en Stock",
-        "color": "Green Alpine"
+        "color": "Green Alpine",
+        "src": "./images/iph13green.jpg"
+
     },
     {
         "id": 15,
@@ -117,15 +135,8 @@
         "memoria": "128GB",
         "precio": 900,
         "descripcion": "Disponible en Stock",
-        "color": "Pink"
-    },
-    {
-        "id": 16,
-        "modelo": "iPhone 13",
-        "memoria": "256GB",
-        "precio": 1020,
-        "descripcion": "Disponible en Stock",
-        "color": "Midnight"
+        "color": "Pink",
+        "src": "./images/iph13pink.jpg"
     },
     {
         "id": 17,
@@ -133,7 +144,8 @@
         "memoria": "128GB",
         "precio": 1150,
         "descripcion": "Disponible en Stock",
-        "color": "Gold"
+        "color": "Gold",
+        "src": "./images/iph13progold.jpg"
     },
     {
         "id": 18,
@@ -141,7 +153,8 @@
         "memoria": "128GB",
         "precio": 1150,
         "descripcion": "Disponible en Stock",
-        "color": "Silver"
+        "color": "Grafito",
+        "src": "./images/iph13prograph.jpg"
     },
     {
         "id": 19,
@@ -149,7 +162,8 @@
         "memoria": "128GB",
         "precio": 1150,
         "descripcion": "Disponible en Stock",
-        "color": "Blue Sierra"
+        "color": "Blue Sierra",
+        "src": "./images/iph13problue.jpg"
     },
     {
         "id": 20,
@@ -157,7 +171,8 @@
         "memoria": "128GB",
         "precio": 1150,
         "descripcion": "Disponible en Stock",
-        "color": "Green Alpine"
+        "color": "Green Alpine",
+        "src": "./images/iph13progreen.jpg"
     },
     {
         "id": 21,
@@ -165,7 +180,8 @@
         "memoria": "256GB",
         "precio": 1250,
         "descripcion": "Disponible en Stock",
-        "color": "Gold"
+        "color": "Gold",
+        "src": "./images/iph13progold.jpg"
     },
     {
         "id": 22,
@@ -173,7 +189,8 @@
         "memoria": "256GB",
         "precio": 1250,
         "descripcion": "Disponible en Stock",
-        "color": "Silver"
+        "color": "Grafito",
+        "src": "./images/iph13prograph.jpg"
     },
     {
         "id": 23,
@@ -181,7 +198,8 @@
         "memoria": "256GB",
         "precio": 1250,
         "descripcion": "Disponible en Stock",
-        "color": "Blue Sierra"
+        "color": "Blue Sierra",
+        "src": "./images/iph13problue.jpg"
     },
     {
         "id": 24,
@@ -189,15 +207,8 @@
         "memoria": "256GB",
         "precio": 1250,
         "descripcion": "Disponible en Stock",
-        "color": "Green Alpine"
-    },
-    {
-        "id": 25,
-        "modelo": "iPhone 13 Pro",
-        "memoria": "256GB",
-        "precio": 1250,
-        "descripcion": "Disponible en Stock",
-        "color": "Green Alpine"
+        "color": "Green Alpine",
+        "src": "./images/iph13progreen.jpg"
     },
     {
         "id": 26,
@@ -205,7 +216,8 @@
         "memoria": "128GB",
         "precio": 1270,
         "descripcion": "Disponible en Stock",
-        "color": "Gold"
+        "color": "Gold",
+        "src": "./images/iph13progold.jpg"
     },
     {
         "id": 27,
@@ -213,7 +225,8 @@
         "memoria": "128GB",
         "precio": 1270,
         "descripcion": "Disponible en Stock",
-        "color": "Silver"
+        "color": "Grafito",
+        "src": "./images/iph13prograph.jpg"
     },
     {
         "id": 28,
@@ -221,7 +234,8 @@
         "memoria": "128GB",
         "precio": 1270,
         "descripcion": "Disponible en Stock",
-        "color": "Blue Sierra"
+        "color": "Blue Sierra",
+        "src": "./images/iph13problue.jpg"
     },
     {
         "id": 29,
@@ -229,7 +243,8 @@
         "memoria": "128GB",
         "precio": 1270,
         "descripcion": "Disponible en Stock",
-        "color": "Green Alpine"
+        "color": "Green Alpine",
+        "src": "./images/iph13progreen.jpg"
     },
     {
         "id": 30,
@@ -237,7 +252,8 @@
         "memoria": "256GB",
         "precio": 1370,
         "descripcion": "Disponible en Stock",
-        "color": "Gold"
+        "color": "Gold",
+        "src": "./images/iph13progold.jpg"
     },
     {
         "id": 31,
@@ -245,7 +261,8 @@
         "memoria": "256GB",
         "precio": 1370,
         "descripcion": "Disponible en Stock",
-        "color": "Silver"
+        "color": "Grafito",
+        "src": "./images/iph13prograph.jpg"
     },
     {
         "id": 32,
@@ -253,7 +270,8 @@
         "memoria": "256GB",
         "precio": 1370,
         "descripcion": "Disponible en Stock",
-        "color": "Blue Sierra"
+        "color": "Blue Sierra",
+        "src": "./images/iph13problue.jpg"
     },
     {
         "id": 33,
@@ -261,15 +279,8 @@
         "memoria": "256GB",
         "precio": 1370,
         "descripcion": "Disponible en Stock",
-        "color": "Green Alpine"
-    },
-    {
-        "id": 34,
-        "modelo": "iPhone 13 Pro Max",
-        "memoria": "256GB",
-        "precio": 1370,
-        "descripcion": "Disponible en Stock",
-        "color": "Green Alpine"
+        "color": "Green Alpine",
+        "src": "./images/iph13progreen.jpg"
     },
     {
         "id": 35,
@@ -277,7 +288,9 @@
         "memoria": "128GB",
         "precio": 1000,
         "descripcion": "Disponible en Stock",
-        "color": "Starlight"
+        "color": "Starlight",
+        "src": "./images/iph14white.jpg"
+
     },
     {
         "id": 36,
@@ -285,7 +298,8 @@
         "memoria": "128GB",
         "precio": 1000,
         "descripcion": "Disponible en Stock",
-        "color": "Midnight"
+        "color": "Midnight",
+        "src": "./images/iph14black.jpg"
     },
     {
         "id": 37,
@@ -293,7 +307,8 @@
         "memoria": "128GB",
         "precio": 1000,
         "descripcion": "Disponible en Stock",
-        "color": "Blue Sierra"
+        "color": "Blue Sierra",
+        "src": "./images/iph14blue.jpg"
     },
     {
         "id": 38,
@@ -301,7 +316,8 @@
         "memoria": "128GB",
         "precio": 1000,
         "descripcion": "Disponible en Stock",
-        "color": "Deep Purple"
+        "color": "Deep Purple",
+        "src": "./images/iph14purple.jpg"
     },
     {
         "id": 35,
@@ -309,7 +325,8 @@
         "memoria": "256GB",
         "precio": 1100,
         "descripcion": "Disponible en Stock",
-        "color": "Starlight"
+        "color": "Starlight",
+        "src": "./images/iph14white.jpg"
     },
     {
         "id": 36,
@@ -317,7 +334,8 @@
         "memoria": "256GB",
         "precio": 1100,
         "descripcion": "Disponible en Stock",
-        "color": "Midnight"
+        "color": "Midnight",
+        "src": "./images/iph14black.jpg"
     },
     {
         "id": 37,
@@ -325,7 +343,8 @@
         "memoria": "256GB",
         "precio": 1100,
         "descripcion": "Disponible en Stock",
-        "color": "Blue Sierra"
+        "color": "Blue Sierra",
+        "src": "./images/iph14blue.jpg"
     },
     {
         "id": 38,
@@ -333,7 +352,8 @@
         "memoria": "256GB",
         "precio": 1100,
         "descripcion": "Disponible en Stock",
-        "color": "Deep Purple"
+        "color": "Deep Purple",
+        "src": "./images/iph14purple.jpg"
     },
     {
         "id": 39,
@@ -341,7 +361,8 @@
         "memoria": "128GB",
         "precio": 1150,
         "descripcion": "Disponible en Stock",
-        "color": "Gold"
+        "color": "Gold",
+        "src": "./images/iph14progold.jpg"
     },
     {
         "id": 40,
@@ -349,7 +370,8 @@
         "memoria": "128GB",
         "precio": 1150,
         "descripcion": "Disponible en Stock",
-        "color": "Silver"
+        "color": "Silver",
+        "src": "./images/iph14prosilver.jpg"
     },
     {
         "id": 41,
@@ -357,7 +379,8 @@
         "memoria": "128GB",
         "precio": 1150,
         "descripcion": "Disponible en Stock",
-        "color": "Deep Purple"
+        "color": "Deep Purple",
+        "src": "./images/iph14propurple.jpg"
     },
     {
         "id": 42,
@@ -365,7 +388,8 @@
         "memoria": "128GB",
         "precio": 1150,
         "descripcion": "Disponible en Stock",
-        "color": "Space Black"
+        "color": "Space Black",
+        "src": "./images/iph14problackk.jpg"
     },
     {
         "id": 39,
@@ -373,7 +397,8 @@
         "memoria": "256GB",
         "precio": 1250,
         "descripcion": "Disponible en Stock",
-        "color": "Gold"
+        "color": "Gold",
+        "src": "./images/iph14progold.jpg"
     },
     {
         "id": 40,
@@ -381,7 +406,9 @@
         "memoria": "256GB",
         "precio": 1250,
         "descripcion": "Disponible en Stock",
-        "color": "Silver"
+        "color": "Silver",
+        "src": "./images/iph14prosilver.jpg"
+
     },
     {
         "id": 41,
@@ -389,7 +416,8 @@
         "memoria": "256GB",
         "precio": 1250,
         "descripcion": "Disponible en Stock",
-        "color": "Deep Purple"
+        "color": "Deep Purple",
+        "src": "./images/iph14propurple.jpg"
     },
     {
         "id": 42,
@@ -397,7 +425,8 @@
         "memoria": "256GB",
         "precio": 1250,
         "descripcion": "Disponible en Stock",
-        "color": "Space Black"
+        "color": "Space Black",
+        "src": "./images/iph14problackk.jpg"
     }
 
 ]
