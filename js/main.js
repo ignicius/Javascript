@@ -35,7 +35,7 @@ function mostrarProductos() {
           </div>
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Color: ${info.color}</li>
-            <li class="list-group-item">Precio: $ ${info.precio}</li>
+            <li class="list-group-item">Precio: $   ${info.precio}</li>
           </ul>
         </div>
       </a>`);

@@ -79,7 +79,7 @@ p {
           animation: fadeIn 3s ease; 
 }
 
-@-webkit-keyframes fadeIn {
+@keyframes fadeIn {
   0% {
     opacity: 0;
     filter: blur(80px);
@@ -142,7 +142,6 @@ h2 {
   transition: transform 300ms ease-out;
   background-color: black;
   color: white;
-
 }
 .card:hover {
   transform: scale(1.05);
